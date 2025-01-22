@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte en Pintura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.app.goo.gl/rtB9hq3kgwn5Z1d19" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Arte en Pintura</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="herramientas.html" target="_self">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                  
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#centros-de-venta">Centros de Venta</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Pintura para tus sueños</h2>
+            <p>Tu casa, tu hogar, tu templo. Descubre las últimas tendencias en color para interior.</p>
+            <a href="herramientas.html" target="_self" class="btn-primary">Ver los productos</a>
+        </div>
+    </section>
+
+    <section id="productos" class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="IMAGENES/american-colors-1.webp" alt="Pintura de pared">
+                    <h3>Pintura de pared</h3>
+                    <p>Transforma tus espacios con la Pintura Látex "Classic American Colors". 
+                        Su fórmula de alta calidad ofrece una excelente cobertura y
+                         un acabado uniforme y duradero, tanto en interiores como en exteriores.</p>
+                    <a href="#" class="btn-primary">Ver Mas</a>
+                </div>
+                <div class="product-card">
+                    <img src="IMAGENES/herramientasdePintura.jpg" alt="Herramientas de pintura">
+                    <h3>Herramientas de pintura</h3>
+                    <p>Logra un acabado profesional en tus proyectos de pintura con este rodillo de alta calidad.
+                         Su mango ergonómico proporciona un agarre cómodo y firme, reduciendo la fatiga durante el uso.</p>
+                    <a href="#" class="btn-primary">Ver Mas</a>
+                </div>
+                <div class="product-card">
+                    <img src="IMAGENES/pinturaIndustriaL.jpg" alt="Pinturas industriales">
+                    <h3>Pinturas industriales</h3>
+                    <p>La Pintura Epóxica Industrial "Bonn" ofrece una protección superior contra la corrosión,
+                         la abrasión y los productos químicos. Ideal para superficies metálicas expuestas a ambientes agresivos. </p>
+                    <a href="#" class="btn-primary">Ver Mas</a>
+                </div>
+                <div class="product-card">
+                    <img src="IMAGENES/temple.webp" alt="Materiales de acabado">
+                    <h3>Materiales de acabado</h3>
+                    <p>Logra un acabado liso y uniforme en tus muros y cielos rasos con el Yeso Temple Constructor.
+                         Su fórmula de alta calidad facilita la aplicación y proporciona una excelente adherencia. Ideal para interiores.</p>
+                    <a href="#" class="btn-primary">ver Mas</a>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="IMAGENES/automotriz.avif" alt="Pintura de pared">
+                        <h3>Pintura Automotriz</h3>
+                        <p>Producto elaborado con resina alquídica modificada, con caucho clorado y pigmentos resistentes a la luz e intemperie.</p>
+                        <a href="#" class="btn-primary">Ver Mas</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="centros-de-venta" class="centros-de-venta">
+        <div class="container">
+            <h2>Centros de Venta</h2>
+            <div id="https://maps.app.goo.gl/rtB9hq3kgwn5Z1d19" style="height: 400px;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +51 933 130 881</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="https://wa.link/o542ea" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61554432202924&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@serviciosydetallesf?_t=8qru9cZG5Jd&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ARTE EN PINTURA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function initialize() {
+            var mapOptions = {
+                center: { lat: -12.046374, lng: -77.042793 }, // Coordenadas de Lima, Perú
+                zoom: 12
+            };
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            // Puedes agregar marcadores para cada centro de venta
+            var marker = new google.maps.Marker({
+                position: { lat: -12.046374, lng: -77.042793 },
+                map: map,
+                title: 'Centro de Venta 1'
+            });
+        }
+    </script>
+
+</body>
+</html>
