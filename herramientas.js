@@ -175,7 +175,7 @@ function abrirWhatsApp(telefono) {
     if (telefono) {
    
         const numeroTelefono = "+51 933 130 881"; // Reemplaza con tu número
-        const mensaje = "Hola, quiero comprar " + telefono;
+        const mensaje = "Hola, quiero comprar " ;
         const url = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank');
     }
